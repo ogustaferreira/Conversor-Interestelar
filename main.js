@@ -1,9 +1,10 @@
-var valorAnoLuz = prompt(
-    "Digite o valor em anos-luz para ser convertido em metros: "
-);
+function enviar() {
 
-var valorEmMetro = 9.461e15;
+    var valorAnoLuz = document.getElementById("valorPassado").value
+    var valorEmMetro = 9.461e15;
+    var resultado = valorAnoLuz * valorEmMetro;
 
-var resultado = valorAnoLuz * valorEmMetro;
+    alert(valorAnoLuz + " Anos-Luz equivale a " + resultado + " metros");
 
-alert(valorAnoLuz + " Anos-Luz equivale a " + resultado + " metros");
+    document.getElementById("valorPassado").value = "";
+}
